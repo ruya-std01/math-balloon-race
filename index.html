@@ -54,7 +54,7 @@ function start(){clear();const phase=++phaseId;soundEffect('start');names={pink:
   el('equation').style.direction='rtl';
   el('equation').style.fontSize='clamp(23px,4vw,35px)';
   el('equation').textContent='يلا يا بطلات! جاهزين للسباق؟';
-  el('answer').textContent='يلا نبدأ! 🎈';
+  el('answer').textContent='يلا نبدأ! ';
   el('cheer').textContent='';
   playVoice('start',()=>{if(phase!==phaseId)return;el('equation').style.direction='ltr';el('equation').style.fontSize='';el('tableLabel').textContent=table==='mix'?'تحدي عشوائي':'جدول ضرب '+ar(table);next()},4100);
 }
